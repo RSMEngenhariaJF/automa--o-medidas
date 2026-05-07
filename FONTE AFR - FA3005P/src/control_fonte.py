@@ -168,7 +168,9 @@ class Fonte:
 
 
 if __name__ == "__main__":
-    caminho_arquivo = 'comandos.txt'
+    import os as _os
+    _PROJECT_ROOT = _os.path.dirname(_os.path.dirname(_os.path.abspath(__file__)))
+    caminho_arquivo = _os.path.join(_PROJECT_ROOT, 'exemplos', 'comandos.txt')
     porta = 'COM3'  # Altere para a porta correta do seu dispositivo
 
     fonte = Fonte(porta_serial=porta)
@@ -177,7 +179,7 @@ if __name__ == "__main__":
 
     if comandos:
         
-         fonte.repeat(600,300,comandos)
+        fonte.repeat(400,300,comandos)
         #Fonte.plotar_comandos(comandos)
 
     fonte.fechar()
