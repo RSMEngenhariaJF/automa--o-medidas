@@ -13,6 +13,7 @@ Automação da fonte de tensão programável **AFR FA3005P** (família Korad/KA3
   - Execução / parada do teste em thread separada (não trava a UI).
   - Botões manuais para ligar/desligar a saída (`OUTPUT1` / `OUTPUT0`).
   - **Editor de forma de onda**: monta o `.txt` passo a passo ou em rampas (V₁ → V₂, N passos), com preview em tempo real, edição da lista (excluir, reordenar) e salvamento.
+  - **Calibração**: registra pontos `(V_set, V_medido, I_medido)` com carga de teste, calcula ajuste linear `V_medido = a·V_set + b`, exibe R² e gráfico, e (opcionalmente) compensa automaticamente a tensão enviada à fonte durante a execução. Salva/carrega calibração em JSON.
 
 ## Requisitos
 
@@ -64,6 +65,12 @@ python src/interface/gui_fonte.py
    - Edite a lista (excluir, mover, limpar) e visualize o preview.
    - Carregue um `.txt` existente para editar e salvar como novo.
    - Informe o nome do arquivo e clique em **Salvar como TXT**.
+3. Aba **Calibração**:
+   - Defina a **faixa de operação** (V mín / V máx).
+   - Para cada ponto: programe um `V_set`, meça a tensão real (`V_medido`) e a corrente (`I_medido`) na carga de teste, e clique em **Adicionar ponto**. O botão **Aplicar V_set à fonte** envia o valor (com a saída ligada) para facilitar a medição.
+   - **Calcular ajuste** faz a regressão linear `V_medido = a·V_set + b` e exibe os coeficientes, R² e gráfico (pontos + reta ajustada + linha ideal `y = x`).
+   - Marque **Usar calibração na execução** para que, durante o teste, o GUI envie `V_set' = (V_alvo − b)/a` no lugar do `V_alvo` lido do `.txt`, fazendo a tensão real na carga se aproximar do alvo. O valor compensado é registrado no log.
+   - **Salvar / Carregar calibração** em JSON.
 
 ### Linha de comando
 

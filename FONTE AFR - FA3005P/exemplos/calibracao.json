@@ -1,0 +1,136 @@
+{
+  "v_min": 0.0,
+  "v_max": 24.0,
+  "pontos": [
+    {
+      "v_set": 0.0,
+      "v_medido": 0.0,
+      "i_medido": 0.01
+    },
+    {
+      "v_set": 1.0,
+      "v_medido": 0.915,
+      "i_medido": 36.41
+    },
+    {
+      "v_set": 2.0,
+      "v_medido": 1.959,
+      "i_medido": 0.077
+    },
+    {
+      "v_set": 3.0,
+      "v_medido": 2.942,
+      "i_medido": 0.116
+    },
+    {
+      "v_set": 4.0,
+      "v_medido": 3.926,
+      "i_medido": 0.155
+    },
+    {
+      "v_set": 5.0,
+      "v_medido": 4.91,
+      "i_medido": 0.194
+    },
+    {
+      "v_set": 6.0,
+      "v_medido": 5.9,
+      "i_medido": 0.234
+    },
+    {
+      "v_set": 7.0,
+      "v_medido": 6.88,
+      "i_medido": 0.273
+    },
+    {
+      "v_set": 8.0,
+      "v_medido": 7.87,
+      "i_medido": 0.312
+    },
+    {
+      "v_set": 9.0,
+      "v_medido": 8.85,
+      "i_medido": 0.351
+    },
+    {
+      "v_set": 10.0,
+      "v_medido": 9.83,
+      "i_medido": 0.39
+    },
+    {
+      "v_set": 11.0,
+      "v_medido": 10.81,
+      "i_medido": 0.429
+    },
+    {
+      "v_set": 12.0,
+      "v_medido": 11.8,
+      "i_medido": 0.468
+    },
+    {
+      "v_set": 13.0,
+      "v_medido": 12.79,
+      "i_medido": 0.507
+    },
+    {
+      "v_set": 14.0,
+      "v_medido": 13.77,
+      "i_medido": 0.547
+    },
+    {
+      "v_set": 15.0,
+      "v_medido": 14.76,
+      "i_medido": 0.585
+    },
+    {
+      "v_set": 16.0,
+      "v_medido": 15.72,
+      "i_medido": 0.623
+    },
+    {
+      "v_set": 17.0,
+      "v_medido": 16.71,
+      "i_medido": 0.662
+    },
+    {
+      "v_set": 18.0,
+      "v_medido": 17.71,
+      "i_medido": 0.702
+    },
+    {
+      "v_set": 19.0,
+      "v_medido": 18.71,
+      "i_medido": 0.741
+    },
+    {
+      "v_set": 20.0,
+      "v_medido": 19.69,
+      "i_medido": 0.781
+    },
+    {
+      "v_set": 21.0,
+      "v_medido": 20.69,
+      "i_medido": 0.819
+    },
+    {
+      "v_set": 22.0,
+      "v_medido": 21.64,
+      "i_medido": 0.857
+    },
+    {
+      "v_set": 23.0,
+      "v_medido": 22.63,
+      "i_medido": 0.896
+    },
+    {
+      "v_set": 24.0,
+      "v_medido": 23.62,
+      "i_medido": 0.935
+    }
+  ],
+  "ajuste_linear": {
+    "a": 0.9850453846153846,
+    "b": -0.019264615384617354,
+    "r2": 0.9999959788276556
+  }
+}
